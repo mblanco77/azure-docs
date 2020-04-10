@@ -1,7 +1,7 @@
 # Private Link DNS integration scenarios
 
 DNS is a critical component to make private link endpoints work correctly within a solution.
-This article is oriented to guide you on how to get the Dns resolution integrated in different scenarios with private link endpoints
+This article is oriented to guide you on how to get the dns resolution integrated in different scenarios with private link endpoints.
 
   
 ## Guidance workflow 
@@ -34,7 +34,7 @@ This custom dns (10.5.0.254) has a conditional forwarder to the general zone dat
 
 ## 3. On-Prem forward to Azure
 
-This Scenario corresponds to an on-premise network that has its internal dns solution (10.0.0.254) that forwards dns traffic via a conditional forwarder for the general zone database.windows.net and chains up the dns resolution to the custom dns (10.5.0.254) deployed in Azure.
+This scenario corresponds to an on-premise network that has its internal dns solution (10.0.0.254) that forwards dns traffic via a conditional forwarder for the general zone database.windows.net and chains up the dns resolution to the custom dns (10.5.0.254) deployed in Azure.
 
 
 ![On-prem forward to azure](media/private-endpoint-dns-scenarios/onpremdns-forward-to-azure.png)
@@ -42,13 +42,13 @@ This Scenario corresponds to an on-premise network that has its internal dns sol
 
 ## 4. On-Prem direct resolution
 
-This Scenario shows an internal on-prem dns that resolves directly the private link endpoint, with an A dns record pointing to the IP in Azure (10.5.0.5)
+This scenario shows an internal on-prem dns that resolves directly the private link endpoint, with an A dns record pointing to the IP in Azure (10.5.0.5)
 
 ![On-prem direct resolution](media/private-endpoint-dns-scenarios/onpremdns-direct-resolution.png)
 
 ## 5. On-Prem with no DNS and forwarding to Azure
 
-This Scenario shows an on-prem network with no dns solution , that forwards the request to a custom DNS (10.5.0.254) deployed in Azure.
+This scenario shows an on-prem network with no local dns solution , that forwards the request to a custom DNS (10.5.0.254) deployed in Azure.
 
 ![On-prem no dns forward to azure](media/private-endpoint-dns-scenarios/onprem-nodns-forward-to-azure.png)
 
@@ -66,7 +66,7 @@ In this scenario there's a [hub & spoke](https://docs.microsoft.com/en-us/azure/
 
 ## 8. Hybrid Scenario
 
-This scenario shows :
+This scenario shows:
 
 - on-premise network that has its internal dns solution (10.0.0.254) that forwards dns traffic via a conditional forwarder for the general zone database.windows.net and chains up the dns resolution to the custom dns (10.5.0.254) deployed in Azure.
 
